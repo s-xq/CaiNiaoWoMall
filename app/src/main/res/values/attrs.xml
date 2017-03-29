@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="MyToolbar">
+
+        <attr name="rightButtonIcon" format="reference"/>
+        <attr name="isShowSearchView" format="boolean"/>
+        <attr name="rightButtonText" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension|reference" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="etWidth" format="dimension|reference" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="etTextSize" format="dimension|reference"/>
+        <attr name="btnTextSize" format="dimension|reference"/>
+    </declare-styleable>
+</resources>

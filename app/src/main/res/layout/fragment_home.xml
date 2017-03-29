@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app = "http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.sxq.mall.widget.MyToolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight = "?attr/actionBarSize"
+        app:title = "首页"
+        app:rightButtonIcon="@drawable/icon_add">
+        <!--android:fitsSystemWindows = "true"-->
+    </com.sxq.mall.widget.MyToolbar>
+
+
+    <com.daimajia.slider.library.SliderLayout
+        android:id="@+id/slider"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" >
+    </com.daimajia.slider.library.SliderLayout>
+    <com.daimajia.slider.library.Indicators.PagerIndicator
+        android:id="@+id/custom_indicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        app:selected_color="#FF5500"
+        app:unselected_color="#55333333"
+        app:shape="rect"
+        app:selected_padding_left="2dp"
+        app:selected_padding_right="2dp"
+        app:unselected_padding_left="2dp"
+        app:unselected_padding_right="2dp"
+        app:selected_width="16dp"
+        app:selected_height="3dp"
+        app:unselected_width="16dp"
+        app:unselected_height="3dp" />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id = "@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop = "10dp">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
